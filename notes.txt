@@ -1,0 +1,71 @@
+Ai terminology/more
+
+To check if the ai is doing good you check the accuracy and error, if less error then accuracy will go more and other way around too
+
+After Eda and data visualization we move into building an ai model
+After the data set has been explored  the data set are divided into 2 parts, training data set and testing data set
+In supervised learning we further divide the data set into features which are the attributes of the data or the columns with which an ai model is going to learn
+Target: Column to be predicted 
+
+
+Points to remember:
+The number of data points or rows in training data set has to be greater than the testing data set
+The data set should be divided into 60:40 ratio, 70:30, or 80:20, the greater ratio needs to be for the training data set and the smaller one needs to be for the testing data set 
+Ideally the training data set should contain 60 percent of the data points or numbers of rows, another 20 percent has to be the testing data set,  and the rest 20 percent has to be validation data set
+Ai model tests its accuracy itself by validating the validation data test, will only proceed if accuracy high and error low, if the other way around then it will stop and loop around
+
+Predicting different sets of values in regression or predicting different sets of values we use the continuous data set where as in classification we use discrete data set
+
+Ai can’t read text so you have to convert those to numbers
+
+If values in a column are empty or NaN and it is not specified that the column is median or average, then you would jus fill the values with the means
+
+Mean and median is known for filling data
+
+If your data is completely positive, not neg value(wrong or bad values not literally negative) then the ai model won’t be good
+So normally we add some wrong values so ai can differentiate which ones are wrong and which ones are good
+
+Data imbalancement is a scenario where one group of data is more that the other group of data for example the number of data points for a particular group of data can be 70 percent of the entire data set where as another group of data contains only 30 percent of the entire data set.
+
+Date points can be called weights, and bigger numbers cause ai to take longer
+
+Normalizing is to lower the weights  (reducing the numbers)
+Scaling does that too but with only a part the data
+
+Scaling vs. Normalization: 
+	Scaling means transforming of data so that it fits within a specific scale; Scaling becomes necessary when dealing with datasets containing features that have different ranges, units of measurement or order of magnitude (the values). In such cases the variation in the feature value can lead to biast model performance or difficulties in the learning process 
+	In general we normalize the data to change the observation of higher magnitude to lower magnitude irrespective of any range. In scaling we are change the range of data while in normalization we are changing the shape of the distribution of the data 
+
+
+Bias: An intercept or effect from an origin
+
+Formulas to get the slope or y-int from deviations of a dataset
+
+slope:
+Sum of product of deviation(x and y)
+Sum of square of deviation of X
+
+Y-int:
+mean(Y) - [m*mean(x)]
+
+Errors in regression models: The average distance of observed value from the slope is known as error in regression
+
+Error Evaluation/Calculating in regression methods:
+1. Mean Absolute Error:  Calculated by calculating the absolute value of the difference of the actual value and predicted value and taking its mean value. (The minimum error)
+	Draw Back: if the line is not linear (it has a curve) one/few data point(s) can be really far away from the line and the error will be off
+2. Mean Squared Error: measures how close a regression line is to a set of data points; calculated by taking the average of errors squared from data as it relates to a function. (The maximum error)
+       Lower the MSE -> Smaller the error -> the better model 
+3. Root Mean Squared Error: same thing as above except you root it to calculate it (to optimize the error)\
+
+To make a good model, the number of features/columns needs to be selected which are valuable for the model. This reduces the complexity of the model and helps the model in learning better.
+
+Different methods for feature selection:
+1. Statistical approach
+2. Filter method
+3. Embedded method
+4. Wrapper method
+
+RFE (recursive feature elimination): over and over checks the features with most weight to the target feature/column(checks row-wise)
+
+Logistic Regression:
+Logistic regression is a supervised machine learning algorithm used for classification tasks where the goal is to predict the probability that an instance belongs to a given class or not. It is also known as binary classifier that takes input and produces a probability value between 0 and 1. The ideal threshold value (probability value) is 0.5.

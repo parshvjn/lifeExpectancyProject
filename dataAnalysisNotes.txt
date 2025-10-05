@@ -1,0 +1,69 @@
+Data Science/Pandas module
+
+
+
+Data is a collection of facts ( can be like textual or digital data)
+Information is what you get after analyzing the data.
+################################################
+
+ONE DIMENSIONAL-ARRAYS:
+[1,2,3,4,5,2,5,2,5]
+
+[1,
+ 2,
+ 3,
+ 4,
+ 5,
+ 6,
+ 7,
+ 8,
+ 9]
+
+Size: 1x9
+
+We call one dimensional lists or arrays: series.
+A column or a row of a table is called as series.
+
+################################################
+
+MULTIDIMENSIONAL-ARRAY
+Shape of a multi-dimensional array means how many rows and columns there are not like, circles or triangles.
+Shape = number of rows * number of columns
+
+Ex.
+[[1,2,3],
+ [4,5,6],
+ [8,9,0]]
+
+Size: 3x3
+
+We call a collection of series or the table as a data frame in pandas module.
+
+
+iloc and loc
+
+iloc works on the copy of a data frame
+
+.iloc[:,:2]
+The first colon tells us that it should take all rows in a data frame.
+The second colon represents that I need only 2 columns from a data frame
+
+
+Marks in percentage is derived from marks obtained and total marks
+
+Iloc: Index based mechanism
+Loc: Label based mechanism
+
+NUMPY:
+
+SCALAR VALUES:
+Scalar values are the numbers which are associated with something. It is also known as the magnitude or quantity.
+Ex: 1 —>
+A car is running at a speed of 40 km/hr; In this example 40 is the scalar value or the magnitude associated with the speed. 	
+Ex: 2 —>
+The height of Mt. Everest is 8,848 meters. Here 8,848 is the scalar value associated with the height
+
+VECTORS:
+Vectors are the combination of both scalar values or magnitude and direction.
+Ex: 1 —>
+A car is moving at a speed of 80 km/hr towards east. Here is 80 is the magnitude or the scalar value and east is the direction and since both of them are combined they are known as vectors.
